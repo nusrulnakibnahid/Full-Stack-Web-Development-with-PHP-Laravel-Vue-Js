@@ -23,8 +23,3 @@ echo "\n";
 echo "Hello $name";
 echo "\n";
 echo "Hello $name, $question"; //or using this line: echo "Hello {$name}, {$question}";
-
-
-
-
-
