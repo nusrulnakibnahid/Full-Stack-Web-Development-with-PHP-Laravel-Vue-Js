@@ -111,10 +111,4 @@ switch($weather){
     echo "Unknown Weather";    
 }
 
-    
-    
-
-
-
-
 ?>
