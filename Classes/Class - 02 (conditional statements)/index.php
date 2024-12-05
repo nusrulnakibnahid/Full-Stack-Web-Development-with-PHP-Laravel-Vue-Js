@@ -3,7 +3,7 @@ $age = 20;
 
 echo $age;
 
-//for single condition
+//IF: for single condition
 if($age >= 18){
     echo "Adult";
 
@@ -14,7 +14,7 @@ if($age >= 18){
 echo"<br>";
 
 
-//for multiple condition
+//If-else: for multiple condition
 
 $marks = 565;
 
@@ -70,6 +70,7 @@ echo"<br> <br>";
 
 //Ternary operator
 
+
 $age = 10;
 
 /*
@@ -110,5 +111,9 @@ switch($weather){
     default :
     echo "Unknown Weather";    
 }
+
+echo "<br> <br>";
+
+
 
 ?>
