@@ -67,24 +67,42 @@ if($marksNested < 33){
 echo"<br> <br>";
 
 
-
 //Ternary operator
-
+//(condition)?"True statement":"False statement";
 
 $age = 10;
 
-/*
+
 if($age>= 18){
     echo "Adult";
 }else{
     echo "Minor";
 }
-*/ 
 
-$minorityCheck = ($age>= 18)?"Adult" : "Minor" ;
-echo $minorityCheck;
+//$minorityCheck = ($age>= 18)?"Adult" : "Minor" ;
+//echo $minorityCheck;
 
 echo"<br> <br>";
+
+
+//Ternary operator (for multiple condition)
+//(condition)?"True statement":/(condition)?"True statement":"False statement";;
+
+$age1 = 10;
+if($age1<= 12){
+    echo "Child";
+}else if ($age1 <18){
+    echo "Minor";
+}else{
+    echo "Adult";
+}
+
+$minorityCheck = ($age1<=12)?"Child":(($age1<18)?"Minor":"Adult");
+echo $minorityCheck;
+
+
+echo"<br> <br.";
+    
 
 
 //Switch-case
@@ -113,6 +131,9 @@ switch($weather){
 }
 
 echo "<br> <br>";
+
+
+
 
 
 
