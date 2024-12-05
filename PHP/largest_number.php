@@ -1,12 +1,18 @@
 <?php
 
-$number1 = 10;
-$number2 = 20;
+echo "enter Number 1:";
+$inputNumber1 = (int) readline();
 
-if ($number1 > $number2) {
+echo "Enter Number 2:";
+$inputNumber2 = (int) readline();
+
+
+if ($inputNumber1 > $inputNumber2) {
     echo"Number 1 is largest number";
-}elseif ($number1 < $number2) {
+}elseif ($inputNumber1 < $inputNumber2) {
     echo "Number 2 is the largest number";
 }else{
-    echo "Number1 and Number2 is equal";
-}
+    echo "Number 1 and Number 2 is equal";
+} 
+
+?>
