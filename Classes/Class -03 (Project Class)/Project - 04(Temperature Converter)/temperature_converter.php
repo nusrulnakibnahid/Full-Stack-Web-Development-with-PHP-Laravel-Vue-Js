@@ -4,21 +4,21 @@ define("FACTOR","9/5");
 define("OFFSET","32");
 
 echo"Enter a temperature value: ";
-$inputTemparature = (float)readline();
+$inputTemperature = (float)readline();
 
-echo "Convert to (1: Fehrenheit, 2:Celsius): "; 
+echo "Convert to (1: Fahrenheit, 2:Celsius): "; 
 $choice = (int) readline();
 
 switch( $choice ){
     case 1:
-        $result = $inputTemparature  * FACTOR + OFFSET;
+        $result = $inputTemperature  * FACTOR + OFFSET;
         echo"Temperature in Fahrenheit: $result";
         break;
 
 
     case 2:
-        $result = ($inputTemparature - OFFSET) / FACTOR;
-        echo"Temperature in Celcius: $result";
+        $result = ($inputTemperature - OFFSET) / FACTOR;
+        echo"Temperature in celsius: $result";
         break;
 
     default:
