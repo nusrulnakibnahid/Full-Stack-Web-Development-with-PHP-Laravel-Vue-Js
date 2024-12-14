@@ -41,7 +41,7 @@ function evaluateQuiz(array $questions, array $answers):int{
 
 }
 
-
+ 
 //Score calculate part
 $score = evaluateQuiz($questions, $answers);
 
