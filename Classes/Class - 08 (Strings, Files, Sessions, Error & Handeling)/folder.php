@@ -28,5 +28,32 @@ if (is_dir($deleteEmptyDir)) {
     echo "Not found";
 }
 
+echo "\n";
+
+
+
+//Folder with content 
+$dFolderName = 'TestAgain'; // Use '=' for assignment, not '=='
+
+if (is_dir($dFolderName)) {
+    // Get the list of files in the directory, excluding '.' and '..'
+    $dFiles = array_diff(scandir($dFolderName), array('.', '..'));
+
+    foreach ($dFiles as $dFile) {
+        $path = "$dFolderName/$dFile"; // Use the correct variable $dFile
+        if (file_exists($path)) { // Check if the file exists
+            if (unlink($path)) { // Attempt to delete the file
+                echo "Deleted: $path\n";
+            } else {
+                echo "Failed to delete: $path\n";
+            }
+        } else {
+            echo "File not found: $path\n";
+        }
+    }
+} else {
+    echo "Directory not found: $dFolderName\n";
+}
+
 
 ?>
