@@ -109,9 +109,9 @@ Here are some exciting projects to kickstart your journey:
 ## 📚 Resources
 
 ### Official Documentation
-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" width="50"> [PHP](https://www.php.net/docs.php)
-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo" width="50"> [Laravel](https://laravel.com/docs)
-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js Logo" width="50"> [Vue.js](https://vuejs.org/guide/)
+- <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" width="50" style="vertical-align:middle;"> [PHP](https://www.php.net/docs.php)
+- <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo" width="50" style="vertical-align:middle;"> [Laravel](https://laravel.com/docs)
+- <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js Logo" width="50" style="vertical-align:middle;"> [Vue.js](https://vuejs.org/guide/)
 
 ### Learning Platforms
 - [Laracasts](https://laracasts.com/): Laravel tutorials and courses
