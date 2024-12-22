@@ -1,7 +1,7 @@
 <?php
 $fruits = array('apple', 'banana', 'orange', 'plum', 'dates', 'mango');
 
-$random = array("a"=>12, "b"=>45, "c"=>34, "d"=>22, "e"=>77, "f"=>31, "g"=>12, "h"=>78);
+$random = array("a"=>12, "b"=>45, "c"=>34, "d"=>22, "e"=>77, "f"=>31, "g"=>12);
 
 // Extracting slices from the fruits array
 //$someFruits = array_slice($fruits, 2);
