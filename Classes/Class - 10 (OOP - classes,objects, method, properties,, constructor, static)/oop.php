@@ -6,11 +6,24 @@ class Car {
     public $color = "red";
     private $colorPrivate = "red";
     protected $colorProtected = "red";
+
+    //Defining a method
+    public function drive() {
+        echo "I am driving the $this->color car \n";
+    }
 }
 
 // Creating/Instantiating an object
 $car1 = new Car();
 echo $car1->color . "\n";
+$car1->drive(); //accessing method
+
+$car2 = new Car();
+$car2->color = "Blue";
+echo $car2->color . "\n";
+$car2->drive(); 
+
+
 
 // Constructor
 class CarWithConstructor {
@@ -33,11 +46,11 @@ class CarWithParams {
     }
 }
 
-$car3 = new CarWithParams("Red");
-echo $car3->color . "<br>";
+$car3 = new CarWithParams("Green");
+echo $car3->color . "\n";
 $car3->drive();
 
-$car4 = new CarWithParams("Blue");
+$car4 = new CarWithParams("Pink");
 $car4->drive();
 
 // Calculator class example
