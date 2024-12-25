@@ -110,6 +110,8 @@ class MyClassWithStaticMethod {
 }
 MyClassWithStaticMethod::myStaticMethod();
 
+
+
 // Accessing Static Properties inside a class
 class MyClassWithStatic {
     public static $value = "Static Value......";
