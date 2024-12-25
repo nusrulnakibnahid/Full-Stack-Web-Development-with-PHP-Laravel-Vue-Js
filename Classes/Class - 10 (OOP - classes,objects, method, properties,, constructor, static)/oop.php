@@ -18,8 +18,8 @@ class Car {
 
 // Creating/Instantiating an object
 $car1 = new Car();
-echo $car1->color . "\n";
-$car1->drive(); //accessing method
+echo $car1->color . "\n"; //accessing a property method
+$car1->drive(); 
 
 $car2 = new Car();
 $car2->color = "Blue";
