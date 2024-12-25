@@ -13,6 +13,9 @@ class Car {
     }
 }
 
+
+
+
 // Creating/Instantiating an object
 $car1 = new Car();
 echo $car1->color . "\n";
@@ -32,6 +35,10 @@ class CarWithConstructor {
     }
 }
 $myCar = new CarWithConstructor();
+
+
+
+
 
 // Passing parameters through constructor
 class CarWithParams {
@@ -53,6 +60,10 @@ $car3->drive();
 $car4 = new CarWithParams("Pink");
 $car4->drive();
 
+
+
+
+
 // Calculator class example
 class Calculator {
     public $num1;
@@ -65,26 +76,36 @@ class Calculator {
 
     public function TowNumberSum() {
         echo $this->num1 + $this->num2;
+        echo "\n";
     }
 
-    public function TowNumberSubstract() {
+    public function TowNumberSub() {
         echo $this->num1 - $this->num2;
+        echo "\n";
     }
 }
-$calculator = new Calculator(5, 9);
+$calculator = new Calculator(5, 9) ;
 $calculator->TowNumberSum();
+$calculator->TowNumberSub();
+
+
+
+
+
 
 // Static Properties
 class MyClass {
-    public static $myStaticProperty = "This is a static property";
+    public static $myStaticProperty = "This is a static property. \n";
 }
 
 echo MyClass::$myStaticProperty;
 
+
+
 // Static Methods
 class MyClassWithStaticMethod {
     public static function myStaticMethod() {
-        echo "This is a static method";
+        echo "This is a static method. \n";
     }
 }
 MyClassWithStaticMethod::myStaticMethod();
