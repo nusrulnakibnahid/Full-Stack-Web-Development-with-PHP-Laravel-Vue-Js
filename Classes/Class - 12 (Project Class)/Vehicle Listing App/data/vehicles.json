@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "name": "BMW",
+        "type": "Luxury Sedan",
+        "price": "32342",
+        "image": "1.png"
+    },
+    {
+        "id": "2",
+        "name": "Audi",
+        "type": "Sport",
+        "price": "45123",
+        "image": "2.png"
+    }
+]

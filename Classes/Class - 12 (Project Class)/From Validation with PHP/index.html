@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling Example</title>
+</head>
+<body>
+    <h1>Form Handling Example</h1>
+
+    <!-- GET Method Form -->
+    <h2>GET Method Form</h2>
+    <form action="handle_get.php" method="get">
+        <label for="name-get">Name:</label>
+        <input type="text" id="name-get" name="name"><br><br>
+        
+        <label for="age-get">Age:</label>
+        <input type="number" id="age-get" name="age"><br><br>
+        
+        <button type="submit">Submit using GET</button>
+    </form>
+    <hr>
+
+    <!-- POST Method Form -->
+    <h2>POST Method Form</h2>
+    <form action="handle_post.php" method="post">
+        <label for="name-post">Name:</label>
+        <input type="text" id="name-post" name="name"><br><br>
+        
+        <label for="age-post">Age:</label>
+        <input type="number" id="age-post" name="age"><br><br>
+        
+        <button type="submit">Submit using POST</button>
+    </form>
+</body>
+</html>
