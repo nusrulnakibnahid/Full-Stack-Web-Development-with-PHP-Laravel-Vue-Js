@@ -1,6 +1,4 @@
 <?php
-// VehicleBase.php - Abstract class for shared properties
-namespace App\Classes;
 
 abstract class VehicleBase {
     protected $name;
@@ -8,7 +6,8 @@ abstract class VehicleBase {
     protected $price;
     protected $image;
 
-    public function __construct($name, $type, $price, $image) {
+    public function __construct($name, $type, $price, $image)
+    {
         $this->name = $name;
         $this->type = $type;
         $this->price = $price;
@@ -17,4 +16,3 @@ abstract class VehicleBase {
 
     abstract public function getDetails();
 }
-

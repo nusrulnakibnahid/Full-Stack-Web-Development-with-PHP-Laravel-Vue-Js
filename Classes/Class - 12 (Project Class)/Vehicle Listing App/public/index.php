@@ -1,41 +1,41 @@
 <?php
-require_once __DIR__ . '/../app/Classes/FileHandler.php';
-require_once __DIR__ . '/../app/Classes/VehicleActions.php';
-require_once __DIR__ . '/../app/Classes/VehicleBase.php';
-require_once __DIR__ . '/../app/Classes/VehicleManager.php';
-
-use App\Classes\VehicleManager;
+require_once "./../app/classes/VehicleManager.php";
 
 $vehicleManager = new VehicleManager('', '', '', '');
 $vehicles = $vehicleManager->getVehicles();
 
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicle Listing</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<body>
-<div class="container mt-5">
-    <h1 class="mb-4">Vehicle Listing</h1>
+
+
+include './views/header.php';
+
+
+
+?>
+
+<div class="container my-4">
+    <h1>Vehicle Listing</h1>
+    <a href="./../public/views/add.php" class="btn btn-success mb-4">Add Vehicle</a>
     <div class="row">
-        <?php foreach ($vehicles as $vehicle): ?>
+        
+         <?php foreach($vehicles as $id=>$vehicle): ?>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="<?= $vehicle['image'] ?>" class="card-img-top" alt="<?= $vehicle['name'] ?>">
+                    <img src="<?= $vehicle['image'] ?>" class="card-img-top" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Name: <?= $vehicle['name'] ?></h5>
-                        <p class="card-text">Type: <?= $vehicle['type'] ?></p>
-                        <p class="card-text">Price: <?= $vehicle['price'] ?></p>
-                        <a href="edit.php?id=<?= $vehicle['id'] ?>" class="btn btn-primary">Edit</a>
-                        <a href="delete.php?id=<?= $vehicle['id'] ?>" class="btn btn-danger">Delete</a>
+                        <h5 class="card-title"><?= $vehicle['name'] ?></h5> 
+                         <p class="card-text">Type: <?= $vehicle['type'] ?></p>
+                        <p class="card-text">Price: ৳<?= $vehicle['price'] ?></p>
+                        <a href="./views/edit.php?id=<?= $id ?>" class="btn btn-primary">Edit</a>
+                        <a href="./views/delete.php?id=<?= $id ?>" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        
     </div>
 </div>
+
 </body>
 </html>
+
+

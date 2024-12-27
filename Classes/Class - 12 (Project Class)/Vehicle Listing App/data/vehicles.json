@@ -1,16 +1,32 @@
 [
     {
-        "id": "1",
-        "name": "BMW",
-        "type": "Luxury Sedan",
-        "price": "32342",
-        "image": "1.png"
+        "name": "R15 V3",
+        "type": "Bike",
+        "price": "7000",
+        "image": "https:\/\/www.financialexpress.com\/wp-content\/uploads\/2020\/08\/yamaha-r15-dark-knight.jpg"
     },
     {
-        "id": "2",
-        "name": "Audi",
-        "type": "Sport",
-        "price": "45123",
-        "image": "2.png"
+        "name": "Ford",
+        "type": "Car",
+        "price": "1346389",
+        "image": "https:\/\/storage.googleapis.com\/wackk-images-production-4f204ab\/gqbkl4z6et82td302muzv9c1osop"
+    },
+    {
+        "name": "Mercedes- Benz",
+        "type": "Car",
+        "price": "153865",
+        "image": "https:\/\/stimg.cardekho.com\/images\/carexteriorimages\/630x420\/Mercedes-Benz\/GLA-2024\/9731\/1679039244149\/front-left-side-47.jpg?impolicy=resize&imwidth=480"
+    },
+    {
+        "name": "Tesla ",
+        "type": "Car",
+        "price": "678365",
+        "image": "https:\/\/www.ccarprice.com\/products\/thumb\/Tesla_Model_S_2023_1.jpg"
+    },
+    {
+        "name": "Honda",
+        "type": "Bike",
+        "price": "464528",
+        "image": "https:\/\/krishna-honda.com\/wp-content\/themes\/rvtheme\/bikes\/main-10009.png?1684389976"
     }
 ]
