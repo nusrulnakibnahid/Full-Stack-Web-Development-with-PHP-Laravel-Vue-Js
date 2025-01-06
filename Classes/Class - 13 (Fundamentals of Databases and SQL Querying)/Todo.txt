@@ -1,0 +1,36 @@
+Overview of databases, 
+understanding tables, columns, and properties.
+SQL Queries: SELECT, INSERT, DELETE, and UPDATE.
+Managing data with grouping, sorting, and limiting results. 
+SQL Aggregation Functions: SUM, AVG, COUNT, etc.
+Key Concepts: Primary Keys, Foreign Keys, and Constraints
+
+
+What is Database?
+Environment Setup
+Create Database - Done
+What is Table, Columns, Rows, properties - Done
+
+What is SQL, MySQL, PostGreSQL - Done
+Create Tables (Department, Employees) - Done
+How to write Insert Query - Done
+How to write Delete Query - Done
+How to write Update Query - Done
+How to write SELECT query all - Done
+How to write write condtional SELECT query with Where - Done
+How to write SELECT with SORT - Done
+How to write SELECT with LIMIT - Done
+How to write SELECT with GROUP BY - Done
+How to write SELECT with Unique - Done
+SQL Aggregation Functions
+    - COUNT()
+    - SUM()
+    - AVG()
+    - MIN()
+    - MAX()
+How to Modify columns
+    -- Add a New Column
+    -- Rename a Column
+    -- Drop a Column
+
+    
