@@ -125,4 +125,4 @@ Here are some exciting projects to kickstart your journey:
 
 ---
 
-**Happy Coding! 🚀**
+                                                         **Happy Coding! 🚀**
