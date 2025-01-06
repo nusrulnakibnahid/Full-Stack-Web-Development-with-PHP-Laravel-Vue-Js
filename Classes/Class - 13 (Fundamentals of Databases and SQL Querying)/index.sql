@@ -1,4 +1,4 @@
--- Active: 1736110313181@@127.0.0.1@3306@ostad
+-- Active: 1736184373844@@127.0.0.1@3306@ostad
 -- Creating Table
 
 -- Creating Departments Table
@@ -14,8 +14,12 @@ CREATE TABLE employees(
     name VARCHAR(150) NOT NULL,
     salary DECIMAL(10,2) NOT NULL,
     department_id INT,
-    FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (department_id) 
+    REFERENCES departments(id) 
+    ON DELETE CASCADE 
+    ON UPDATE CASCADE
 )
+
 
 -- How to write Insert Query
 
