@@ -39,6 +39,7 @@ INSERT INTO employees (id, name, department_id, salary) VALUES
 (4, 'Diana', 1, 52000),
 (5, 'Eve', 2, 80000);
 
+
 -- How to write Delete Query
 DELETE FROM employees WHERE id = 5
 
@@ -52,7 +53,7 @@ SELECT * FROM departments
 SELECT * FROM employees
 
 
--- How to write write condtional SELECT query with Where
+-- How to write write conditional SELECT query with Where
 SELECT * FROM employees WHERE name = "Bob"
 
 SELECT salary FROM employees WHERE name = "Bob"
@@ -108,7 +109,7 @@ ORDER BY employee_count DESC
 LIMIT 2;
 
 
--- Modifying Colums
+-- Modifying Columns
 
 -- Add a New Column
 ALTER TABLE employees
