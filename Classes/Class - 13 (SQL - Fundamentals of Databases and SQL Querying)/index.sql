@@ -5,7 +5,7 @@
 CREATE TABLE departments(
     id INT PRIMARY KEY,
     name VARCHAR(100) NULL UNIQUE
-)
+);
 
 
 -- Creating Employees Table
@@ -18,7 +18,7 @@ CREATE TABLE employees(
     REFERENCES departments(id) 
     ON DELETE CASCADE 
     ON UPDATE CASCADE
-)
+);
 
 
 -- How to write Insert Query
