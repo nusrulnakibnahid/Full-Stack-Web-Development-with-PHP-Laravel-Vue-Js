@@ -7,7 +7,7 @@ CREATE TABLE tasks(
     is_completed TINYINT(1) NOT NULL DEFAULT 0 COMMENT '0: Not Completed, 1: Completed',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+); 
 
 
 INSERT INTO tasks (title, description, priority, is_completed, created_at)
