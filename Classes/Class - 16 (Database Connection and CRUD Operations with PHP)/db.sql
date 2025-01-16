@@ -1,3 +1,4 @@
+-- Active: 1736184373844@@127.0.0.1@3306@task_app
 
 CREATE TABLE tasks(
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -23,5 +24,5 @@ VALUES
 ('Server Maintenance', 'Perform maintenance and updates on the server to ensure optimal performance.', 'high', 0, '2025-01-08 12:00:00'),
 ('Client Feedback Call', 'Schedule and conduct a call with the client to gather feedback on the latest release.', 'medium', 1, '2025-01-07 17:30:00');
 
-
+ 
 
