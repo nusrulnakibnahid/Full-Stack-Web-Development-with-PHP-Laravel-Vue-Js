@@ -1,11 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostad class 19 | Module : 08</title>
+    <title>Ostad class 1 | Module : 08</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!--Heading Tag-->
+    <h1>HTML</h1>
+    <h2>CSS</h2>
+    <h3>JS</h3>
+    <h4>PHP</h4>
+    <h5>SQL</h5>
+    <h6>Laravel</h6>
+
+
+    <!--Text Formatting-->
+    <p><b>This is bold text</b></p>
+    <p><strong>This is strong text</strong></p>
+    <p><i>This is italic text</i></p>
+    <p><em>This is emphasized text</em></p>
+    <p><mark>This is marked text</mark></p>
+    <p><small>This is small text</small></p>
+    <p><del>This is deleted text</del></p>
+    <p><ins>This is inserted text</ins></p>
+    <p><u>This is underline text</u></p>
+    <p>H<sub>2</sub>O = This is subscript text</p>
+    <p>(a+b)<sup>2</sup> = This is superscript text</p>
+    <p><abbr title="JavaScript">JS</abbr></p>
+    <h3>
+        <blockquote>This is a blockquote</blockquote>
+    </h3>
+    <p><cite>This is a citation</cite> by. Nahid</p>
+    <p><code>This is a code: echo "Hello World!";</code></p>
+    <p><kbd>This is a keyboard text</kbd></p>
+    <p><samp>This is a sample output</samp></p>
+    <p><var>This is a variable</var></p>
+    <p>
+    <pre>This is a preformatted text</pre>
+    </p>
+    <p>He said, <q>Hello World</q></p>
+    <p><bdo dir="rtl">This is a bidirectional override</bdo></p>
+    <p><bdo dir="ltr">This is a bidirectional override</bdo></p>
+
+
+
+
+    <!--HTML Link-->
+    <a href="https://www.google.com" target="_blank">
+        <p>Google</p>
+    </a>
+
+    <a href="#section">Section</a>
+    <h2 id="section">Section</h2>
+    <p>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ipsa vero voluptatem
+        laboriosam eveniet, adipisci ea.</p>
+
+
+
+    <!--HTML List(ul, ol, dl)-->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Laravel</li>
+    </ul>
+
+    <br><br>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Laravel</li>
+    </ol>
+    <br><br>
+
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+        <dt>PHP</dt>
+        <dd>PHP Hypertext Preprocessor</dd>
+        <dt>SQL</dt>
+        <dd>Structured Query Language</dd>
+        <dt>Laravel</dt>
+        <dd>PHP Framework</dd>
+    </dl>
+
+    <hr>
+    <br><br><br>
+
+
+
+    <!--Image Tag-->
+    <img src="https://img.goodfon.com/wallpaper/big/a/3a/cristiano-ronaldo-soccer-cr7-cris-juve-juventus-cristiano-ro.webp"
+        alt="CR7 Image" width="400" height="300"> <br>
+
+
+    <!--Audio Tag-->
+    <audio controls
+        src="Classes/Class - 19 (HTML -  Structural Tags, Text Formatting, List, Link , Image and Multimedia , Table, Form, Semantic Tags)/Audio/SIUU.mp3"
+        type="mp3"></audio>
+
+
+    <!--Video Tag-->
+    <video src="video link here" type="video/mp4"></video>
+    <br><br>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ur9yDqE8EiY?si=TpxpJEdH-WaJ_l2E"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <hr><br>
+
+    <!--From Tag-->
+    <form action="submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter Number" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" rows="15" cols="30"></textarea><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" name="birthdate" id="birthdate" /><br><br>
+
+        <label for="appointment_time">Appointment Time:</label>
+        <input type="time" name="appointment_time" id="appointment_time" /><br><br>
+
+        <label for="background_color">Background Color:</label>
+        <input type="color" name="background_color" id="background_color" /><br><br>
+
+        <label for="volume">Volume:</label>
+        <input type="range" name="volume" id="volume" min="0" max="100" /><br><br>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <br>
+
+        <input type="checkbox" name="vehicle1" value="Bike" /> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car" /> I have a car<br>
+        <input type="checkbox" name="vehicle3" value="Boat" /> I have a boat<br>
+
+
+        <input type="hidden" name="token" value="abc123" /> <br>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+ 
+
+    </form>
+<hr>
+
+    <!--Table Tag-->
+    <h2>Table Tag</h2>
+    <table border="1" width="40%">
+        <tr>
+            <th>SL</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nahid</td>
+            <td>25</td>
+            <td>Dhaka</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Shakil</td>
+            <td>26</td>
+            <td>Chittagong</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shakib</td>
+            <td>27</td>
+            <td>Rajshahi</td>
+        </tr>
+    </table>
+
+<hr>
+
+    <!--Semantic Tag-->
+    <header>
+        <h1>Semantic Tag</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This is the homepage of my blog. Explore the articles below!</p>
+        </section>
+
+        <section id="articles">
+            <article>
+                <header>
+                    <h2>Understanding Semantic HTML</h2>
+                    <p>Published on: January 19, 2025</p>
+                </header>
+                <p>Semantic HTML helps structure your webpage meaningfully and improves accessibility.</p>
+                <footer>Author: Jane Doe</footer>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
     
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
