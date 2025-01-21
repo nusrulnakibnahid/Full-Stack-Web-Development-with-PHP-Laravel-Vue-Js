@@ -1,0 +1,3 @@
+Open Graph Meta Tag : https://developers.facebook.com/docs/sharing/webmasters/
+
+Twitter Meta Tag : https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
