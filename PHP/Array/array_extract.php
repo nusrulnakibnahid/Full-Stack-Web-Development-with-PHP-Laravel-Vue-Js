@@ -14,4 +14,4 @@ $randomData = array_slice($random, 1, -1, true);
 
 print_r($randomData);
 
-?>
+?> 
