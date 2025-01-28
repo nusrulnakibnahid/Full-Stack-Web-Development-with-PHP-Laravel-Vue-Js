@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      /* * {
+        color: orange;
+      } */
+      h1 {
+        color: red;
+      }
+      .class_selector {
+        color: green;
+      }
+      #id_selector {
+        color: brown;
+      }
+      h4,
+      h5 {
+        color: chartreuse;
+      }
+      h5 {
+        font-size: 10px;
+      }
+      /* Descendant Selector */
+      div p {
+        color: blueviolet;
+      }
+
+      /* Child Selector */
+      ul > li {
+        list-style: none;
+      }
+
+      /* Adjacent Sibling Selector */
+      h2 + p {
+        color: salmon;
+      }
+
+      /* General Sibling Selector */
+      h2 ~ p {
+        color: green;
+      }
+      .heading-2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Basic Selector -->
+    <!-- <h1>Basic Selector</h1>
+    <p>Universal Selector 3</p> -->
+    <!-- Class Selector -->
+    <!-- <h2 class="class_selector box">Class Selector</h2> -->
+
+    <!-- ID Selector -->
+    <!-- <h3 id="id_selector">ID Selector</h3> -->
+
+    <!-- Universal Selector -->
+    <!-- <p>Universal Selector 1</p>
+    <p>Universal Selector 2</p>
+    <p>Universal Selector 3</p> -->
+
+    <!-- Grouping selector -->
+    <!-- <h4>Grouping Selector 1</h4>
+    <h5>Grouping Selector 2</h5> -->
+
+    <!-- Descendant Selector -->
+    <div>
+      <p>Descendant Selector</p>
+    </div>
+
+    <!-- Child Selector -->
+    <!-- <ul>
+      <li>Child Selector</li>
+      <li>Child Selector</li>
+      <li>Child Selector</li>
+      <li>Child Selector</li>
+    </ul> -->
+
+    <!-- Adjacent Sibling Selector (+) -->
+    <!-- <h2>CSS</h2>
+    <p>Adjacent Sibling Selector</p>
+    <p>Another p tag</p> -->
+
+    <!-- <h2 class="heading-2">CSS</h2>
+    <h2 class="heading-2">HTML</h2> -->
+  </body>
+</html>

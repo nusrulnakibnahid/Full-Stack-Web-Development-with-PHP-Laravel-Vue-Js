@@ -1,0 +1,14 @@
+=====================
+Topics we will cover
+=====================
+
+CSS Introduction   - Done
+How to add CSS - Done
+Basic Syntax - Done
+Selector - Done
+Background properties - Done
+Border Properties - solid
+Border Radius - done
+Display Property - Done
+Cursor Property - Done
+Float Property - Done
