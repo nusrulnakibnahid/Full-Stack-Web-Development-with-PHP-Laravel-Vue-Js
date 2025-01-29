@@ -1,0 +1,153 @@
+:root{
+    --bg-color-test: #818C78;
+    --font-color-primary: #F6DED8;
+}
+
+
+.redColor{
+    color: red;
+    text-align: center;
+}
+
+.paragraph{
+    font-family: "Playwrite IN", serif;
+    font-size: 30px;
+    color: var(--font-color-primary);
+    background-color: var(--bg-color-test);
+}
+
+.fontCustomize{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 50px;
+    text-decoration: line-through;
+    letter-spacing: 5px;
+}
+
+.customBox{
+    height: 400px;
+    width: 400px;
+    background-color: var(--bg-color-test);
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item1{
+    background-color: #F6DED8;
+    font-size: 30px;
+}
+.item2{
+    background-color: aqua;
+    font-size: 30px;
+}
+.item3{
+    background-color: #818C78;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 12px;
+
+}
+
+.boxTwo{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.marginPaddingForP{
+    background-color: aliceblue;
+    font-size: 35px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.item4{
+    background-color: rgb(67, 73, 73);
+    display: inline-block;
+    /* height: 100px;
+    width: 150px; */
+}
+
+.item5{
+    background-color: #818C78;
+    display: inline-block;
+    /* height: 100px;
+    width: 200px; */
+}
+
+.item6{
+    background-color: blue;
+}
+
+header{
+    background-color: bisque;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.staticSection{
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid gray;
+}
+
+.relativeSection{
+    background-color: rgb(108, 170, 223);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.child-absolute{
+    background-color: rgb(38, 57, 73);
+    padding: 20px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.absoluteSection{
+    background-color: rgb(147, 189, 39);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.stickySection{
+    background-color: #c83c5f;
+    color: white;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.newSection{
+    height: 500px;
+    width: 500px;
+    background-color: #c83c5f;
+    margin: 20px;
+    position: relative;
+
+}
+
+.closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
