@@ -1,0 +1,16 @@
+1. Introduction to Bootstrap, 
+2. Setting Up Bootstrap - https://getbootstrap.com, 
+3. Bootstrap Grid System, 
+4. Typography and Utilities, 
+5. Basic Components: 
+                Buttons, 
+                Alerts, 
+                Badges, 
+                Cards, 
+                List Groups, 
+                Progress Bar, 
+                Spinners, 
+                Breadcrumb, 
+                Close Button, 
+                Pagination, 
+                Placeholders
