@@ -1,0 +1,19 @@
+.bg-body-tertiary{
+    background-color: aquamarine !important;
+}
+
+.hero-section{
+    background: url('https://placehold.co/1920x1080');
+    height: 100vh;
+}
+
+#contact .form-control{
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid red;
+}
+
+#contact .form-control:focus{
+    border-color: aqua;
+    box-shadow: 0 0 5px rgb(75, 75, 153);
+}
