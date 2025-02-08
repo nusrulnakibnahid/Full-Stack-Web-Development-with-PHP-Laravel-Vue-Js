@@ -206,31 +206,20 @@ body:not(:has(.hero:target)) .navbar {
 }
 
 /* Special Section */
-.special {
-    padding: 80px 0;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    text-align: center;
-}
-
-.special h2 {
-    color: var(--yellow);
-    font-size: 36px;
-}
-
-.special .btn-warning {
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px var(--shadow-color);
-}
-
-.special .btn-warning:hover {
-    background-color: var(--medium-blue);
-    color: var(--white);
-    transform: scale(1.05);
-}
+.special-section {
+    padding: 6rem 0;
+    background-color: var(--light-bg);
+  }
+  .special-section h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .special-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
 
 /* Contact Section */
 .contact {
@@ -301,6 +290,16 @@ footer {
     margin-top: 40px;
     box-shadow: 0 -4px 6px var(--shadow-color);
 }
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
