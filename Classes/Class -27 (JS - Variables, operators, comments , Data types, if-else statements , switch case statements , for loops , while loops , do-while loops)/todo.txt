@@ -1,0 +1,12 @@
+// variable, array, loop, condition, function, object
+Variables - Done
+comments - Done
+Data types - Done
+operators - Done
+if-else statements - Done
+switch case statements - Done
+for loops - Done
+while loops - Done
+do-while loops - Done
+for in - Done
+for of - Done
