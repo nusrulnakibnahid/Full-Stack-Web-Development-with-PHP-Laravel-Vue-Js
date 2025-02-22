@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Element</title>
+</head>
+<body>
+
+    <ul id="productList">
+        <li>Product 1</li>
+        <li>Product 2</li>
+    </ul>
+
+    <button onclick="addProduct()">Add New</button>
+    
+    <script>
+        function addProduct(){
+            let productListVar = document.getElementById("productList");
+
+            let newProduct = document.createElement("li");
+            newProduct.innerText = "New Product";
+            productListVar.append(newProduct);
+        }
+    </script>
+</body>
+</html>

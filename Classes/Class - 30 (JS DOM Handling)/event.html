@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+
+    <p id="cartMessage">Your cart is empty</p>
+
+    <button id="cartBtn">Add To Cart</button>
+    <button id="mouseEv">Mouse Event</button>
+
+    <br>
+
+    <input id="searchID" type="text" placeholder="Type something...">
+    <p id="searchResult"></p>
+
+    <script>
+
+        let catBTN = document.getElementById("cartBtn");
+        let cartMessage = document.getElementById("cartMessage");
+
+        catBTN.addEventListener("click",function(){
+            cartMessage.innerText = "Product added to the cart"
+        });
+
+        let mouseEvent = document.getElementById("mouseEv");
+
+        mouseEvent.addEventListener("mouseover",function(){
+            cartMessage.style.backgroundColor = "green";
+            cartMessage.innerText = "Mouse Over Text"
+        });
+
+        mouseEvent.addEventListener("mouseout",function(){
+            cartMessage.style.backgroundColor = "red";
+            cartMessage.innerText = "Mouse Out Text"
+        });
+
+        //Keyboard Event
+
+        let searchKeywords = document.getElementById("searchID");
+        let searchResult = document.getElementById("searchResult");
+
+        searchKeywords.addEventListener("keyup",function(event){
+            searchResult.innerHTML = event.target.value;
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

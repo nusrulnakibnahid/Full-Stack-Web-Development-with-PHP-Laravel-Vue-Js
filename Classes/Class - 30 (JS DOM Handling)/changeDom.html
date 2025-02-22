@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changes</title>
+</head>
+<body>
+
+    <div id="newSection"></div>
+
+    <button onclick="addNews()">Add News</button>
+
+    <h3 id="cssTestID">This is my H3 Tag</h3>
+
+    <button onclick="cssChange()">CSS</button>
+
+    
+    
+    <script>
+        function addNews(){
+            let newSection = document.getElementById("newSection");
+            newSection.innerHTML = "<h2>This is very hot breaking news</h2>";
+
+
+        }
+
+        function cssChange(){
+            let cssTest = document.getElementById("cssTestID");
+            cssTest.style.color = "blue";
+            cssTest.style.fontSize = "30px";
+            cssTest.style.backgroundColor = "green";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing DOM Element</title>
+</head>
+<body>
+
+    <h1 id="healineOneID">Hello, Welcome to our page</h1>
+
+    <button onclick="myTestFun()">Click Me</button>
+
+    <h1 class="headTwo">Hello, This headline test 2</h1>
+    <h2 class="headTwo">This one is another test</h2>
+
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+
+    <button onclick="paragraphTestFun()">Para Button</button>
+
+
+    <h3 id="testH3ID">This is H3 Tag</h3>
+    <h4>This is H4 Tag</h4>
+
+    <button onclick="querySelectorTest()">Query</button>
+    <button onclick="queryAll()">QAll</button>
+    
+
+    <script>
+
+        function myTestFun(){
+            let headOne =  document.getElementById("healineOneID");
+            headOne.innerText = "Hello, This is my new Text";
+            headOne.style.backgroundColor = "yellow";
+        }
+
+        let headTwo = document.getElementsByClassName("headTwo");
+        console.log(headTwo[1].innerText);
+
+        
+
+        function paragraphTestFun(){
+            let paragraph = document.getElementsByTagName("p");
+            Array.from(paragraph).forEach(para =>{
+                para.innerText = "This new data";
+                para.style.backgroundColor = "blue";
+                para.style.fontSize = "30px";
+            });  
+        }
+
+        function querySelectorTest(){
+            let queryTest = document.querySelector(".headTwo");
+            queryTest.style.backgroundColor = "red";
+        }
+
+        function queryAll(){
+            let queryAllTest = document.querySelectorAll(".headTwo");
+            queryAllTest[0].style.backgroundColor = "black";
+        }
+        
+    </script>
+</body>
+</html>

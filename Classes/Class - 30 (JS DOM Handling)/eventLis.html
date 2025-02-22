@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event List</title>
+</head>
+<body>
+
+    <button onclick="showMessage()">Click Me On click</button>
+
+    <br>
+
+    <p id="newText">Hello 12345</p>
+
+    <button id="btnID">Click Me again</button>
+    
+    <script>
+        function showMessage(){
+            alert("Button Clicked");
+        }
+
+        document.getElementById("btnID").addEventListener("click",function(){
+            alert("Button Clicked for 2nd one");
+        });
+
+        document.getElementById("btnID").addEventListener("mouseover",function(){
+            document.getElementById("newText").style.backgroundColor = "red";
+            document.getElementById("newText").innerText = "Mouse Out Text";
+        });
+        
+
+    </script>
+</body>
+</html>
