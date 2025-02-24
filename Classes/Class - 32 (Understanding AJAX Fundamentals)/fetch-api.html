@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch API Simulation with Separate Buttons</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>API Operations with Fetch</h1>
+
+      <!-- GET Posts -->
+      <div class="mb-4">
+        <button class="btn btn-primary" id="btnGetPosts">Get Posts</button>
+      </div>
+
+      <!-- Create Post -->
+      <h2>Create Post</h2>
+      <form id="createForm" class="mb-4">
+        <div class="form-group">
+          <label for="createTitle">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="createTitle"
+            placeholder="Enter title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="createContent">Content</label>
+          <textarea
+            class="form-control"
+            id="createContent"
+            placeholder="Enter content"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Create Post</button>
+      </form>
+
+      <!-- Update Post -->
+      <h2>Update Post</h2>
+      <form id="updateForm" class="mb-4">
+        <div class="form-group">
+          <label for="updateId">Post ID</label>
+          <input
+            type="number"
+            class="form-control"
+            id="updateId"
+            placeholder="Enter post id"
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateTitle">New Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="updateTitle"
+            placeholder="Enter new title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateContent">New Content</label>
+          <textarea
+            class="form-control"
+            id="updateContent"
+            placeholder="Enter new content"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Update Post</button>
+      </form>
+
+      <!-- Delete Post -->
+      <h2>Delete Post</h2>
+      <form id="deleteForm" class="mb-4">
+        <div class="form-group">
+          <label for="deleteId">Post ID</label>
+          <input
+            type="number"
+            class="form-control"
+            id="deleteId"
+            placeholder="Enter post id to delete"
+          />
+        </div>
+        <button type="submit" class="btn btn-danger">Delete Post</button>
+      </form>
+
+      <!-- Output Display -->
+      <h2>Output</h2>
+      <pre id="output"></pre>
+    </div>
+
+    <script>
+      // API URL
+      const apiURL = "http://127.0.0.1:8000/api/posts";
+      function displayData(data) {
+        document.getElementById("output").textContent = JSON.stringify(
+          data,
+          null,
+          2
+        );
+      }
+
+      //   GET POSTS FUNCTION
+      async function getPosts() {
+        try {
+          const response = await fetch(apiURL);
+          const posts = await response.json();
+          console.log(posts);
+          displayData(posts);
+        } catch (error) {
+          console.log("Error for getting posts", error);
+        }
+      }
+      //   GET POSTS
+      document
+        .getElementById("btnGetPosts")
+        .addEventListener("click", getPosts);
+
+      async function createPost(title, content) {
+        try {
+          const response = await fetch(apiURL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              title,
+              content,
+            }),
+          });
+          const newPost = await response.json();
+          displayData(newPost);
+        } catch (error) {
+          console.log("Error for creating post", error);
+        }
+      }
+      // Create form sumbission
+      document
+        .getElementById("createForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const title = document.getElementById("createTitle").value;
+          const content = document.getElementById("createContent").value;
+          createPost(title, content);
+        });
+
+      async function updatePost(id, title, content) {
+        try {
+          const response = await fetch(`${apiURL}/${id}`, {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              title,
+              content,
+            }),
+          });
+          const updatedPost = await response.json();
+          displayData(updatedPost);
+        } catch (error) {
+          console.log("Error for updating post", error);
+        }
+      }
+      // Update form sumbission
+      document
+        .getElementById("updateForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const id = document.getElementById("updateId").value;
+          const title = document.getElementById("updateTitle").value;
+          const content = document.getElementById("updateContent").value;
+          updatePost(id, title, content);
+        });
+
+      async function deletePost(id) {
+        try {
+          const response = await fetch(`${apiURL}/${id}`, {
+            method: "DELETE",
+          });
+          const result = await response.json();
+          displayData(result);
+        } catch (error) {
+          console.log("Error for deleting post", error);
+        }
+      }
+      // delete form submission
+      document
+        .getElementById("deleteForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const id = document.getElementById("deleteId").value;
+          deletePost(id);
+        });
+    </script>
+  </body>
+</html>

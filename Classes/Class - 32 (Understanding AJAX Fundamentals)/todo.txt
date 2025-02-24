@@ -1,0 +1,10 @@
+What is AJAX?
+How AJAX works
+Importance of AJAX in Modern Web Applications
+Introduction to the Fetch API
+Making GET and POST Requests
+Handling JSON Data
+Why Use Axios?
+Installing Axios (via CDN)
+Making GET and POST Requests with Axios
+Comparing Fetch API and Axios
