@@ -126,7 +126,7 @@ console.log(templateLi.replace("Hello","Hi"));
 console.log(templateLi.replaceAll("o","Q"));
 
 
-let myName = "    Sobuj Ahmed    ";
+let myName = "    Nakib Nahid   ";
 console.log(myName);
 
 let nameTrim = myName.trim();
