@@ -1,0 +1,20 @@
+- What is Blade Template Engine
+- Blade Driectives
+    - php directive
+    - if else directive
+    - swtich directive
+    - loops directive
+    - foreach directive
+    - forelse directive
+    - isset directive
+    - empty directive
+    - auth & guest directive
+    - error directive
+    - @csrf, @method('PUT'), @method('DELETE') Form's directive
+    - session directive
+
+- Blade Layout
+    - extends directive
+    - section directiv
+    - stack and push directive
+    - yield directive
