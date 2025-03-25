@@ -1,0 +1,9 @@
+Exploring Migrations
+Naming conventions
+Migration Structure
+Database columns types in migration
+Working with different columns types and attributes
+Table Column Modification Add, Rename, Drop
+
+Session
+Logging
