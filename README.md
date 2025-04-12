@@ -4,16 +4,26 @@ Welcome to the **Full-Stack Web Development** roadmap! This repository is your g
 
 
 ## 📋 Table of Contents
-- [✨ Introduction](#-introduction)
-- [✅ Prerequisites](#-prerequisites)
-- [🛠 Technology Stack](#-technology-stack)
-- [🚀 Roadmap](#-roadmap)
-  - [📂 Backend Development](#backend-development)
-  - [🎨 Frontend Development](#frontend-development)
-  - [🗄 Database Management](#database-management)
-  - [🌍 Deployment](#deployment)
-- [💡 Project Ideas](#-project-ideas)
-- [📚 Resources](#-resources)
+- [🌐 Full-Stack Web Development with PHP, Laravel, and Vue.js 🌟](#-full-stack-web-development-with-php-laravel-and-vuejs-)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Introduction](#-introduction)
+  - [✅ Prerequisites](#-prerequisites)
+  - [🛠 Technology Stack](#-technology-stack)
+    - [🔧 Backend](#-backend)
+    - [🎨 Frontend](#-frontend)
+    - [🗄 Database](#-database)
+    - [🛠 Development Tools](#-development-tools)
+    - [🌐 Deployment](#-deployment)
+  - [🚀 Roadmap](#-roadmap)
+    - [📂 Backend Development](#-backend-development)
+    - [🎨 Frontend Development](#-frontend-development)
+    - [🗄 Database Management](#-database-management)
+    - [🌍 Deployment](#-deployment-1)
+  - [💡 Project Ideas](#-project-ideas)
+  - [📚 Resources](#-resources)
+    - [Official Documentation](#official-documentation)
+    - [Learning Platforms](#learning-platforms)
+    - [Tools](#tools)
 
 
 
@@ -125,4 +135,4 @@ Here are some exciting projects to kickstart your journey:
 
 ---
 
-                                                         **Happy Coding! 🚀**
+                              **Happy Coding! 🚀**
