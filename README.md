@@ -1,6 +1,6 @@
 # 🌐 Full-Stack Web Development with PHP, Laravel, and Vue.js 🌟
 
-Welcome to the **Full-Stack Web Development** roadmap! This repository is your guide to mastering **PHP**, **Laravel**, and **Vue.js** for creating modern, scalable web applications.
+Welcome to the **Full-Stack Web Development** roadmap! This repository is your guide to mastering **PHP**, **Laravel**, and **Vue.js** for creating modern, scalable web applications.    
 
 
 ## 📋 Table of Contents
