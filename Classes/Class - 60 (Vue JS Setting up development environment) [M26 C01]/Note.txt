@@ -1,0 +1,10 @@
+======
+Todos
+======
+
+Setting up development environment | 
+VS Code Extensions, Chrome Extension | 
+Scaffolding your first vue.js project with Vite | 
+Creating a vuejs project with Vite, Project files structure | 
+Preparing our project for work, Importing html markup in vue project | 
+Using data in vuejs, Display data from object and array
