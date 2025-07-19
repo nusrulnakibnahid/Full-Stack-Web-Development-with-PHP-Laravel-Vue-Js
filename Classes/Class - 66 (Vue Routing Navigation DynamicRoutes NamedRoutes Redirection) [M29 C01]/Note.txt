@@ -1,0 +1,22 @@
+Intro to Vue Router
+Configurations of vue router
+Breaking Markup into components
+Hyper Linking to routes with RouterLink
+Displaying Component by RouterView
+Named Routes
+Routing to Named Routes
+Named Routeview
+Redirection
+Dynamic Routes
+Passing route params in RouterLink
+Refresh Dynamic Routes
+Active Link Styling
+========================================
+Progress Bar
+
+
+Laravel+Blade
+
+Laravel API + Vue
+
+Laravel+Inertia+Vue
