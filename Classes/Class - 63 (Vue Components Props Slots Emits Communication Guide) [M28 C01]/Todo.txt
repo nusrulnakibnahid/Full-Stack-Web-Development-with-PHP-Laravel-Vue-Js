@@ -1,0 +1,9 @@
+Introduction to Vue components | 
+Component Naming Best Practices in Vue | 
+Props – Passing Data to Child | 
+Reusable Components with Props | 
+Nested Components in Vue | 
+Global vs Local Vue Components | 
+Slots – Passing Content Inside a Component | 
+Emits – Sending Events to Parent | 
+Parent-Child Communication (Two-Way Binding)
