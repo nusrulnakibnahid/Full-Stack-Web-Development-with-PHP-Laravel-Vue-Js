@@ -1,0 +1,20 @@
+Task Manager
+- Authentication
+- Task CRUD
+
+- Class 2
+Project Setup
+- Vue JS
+- axios (npm install axios)
+- vue router (npm install vue-router@4)
+- pinia (npm install pinia)
+- cogotoast (npm i cogo-toast)
+- nprogress (npm i nprogress)
+
+Authentication Implementation
+- Templating
+- Registation
+- Login
+- Logout
+
+=====================Done==============================
